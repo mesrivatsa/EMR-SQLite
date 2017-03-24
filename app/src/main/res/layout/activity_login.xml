@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    android:padding="20dp"
+    tools:context="com.edu.tce.emr_sqlite.ui.Login">
+    <TextView
+        android:id="@+id/apptitle"
+        android:layout_marginTop="110dp"
+        android:text="@string/app_name"
+        android:textColor="#ffffff"
+        android:textSize="25sp"
+        android:layout_marginBottom="20dp"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:padding="10dp"
+        android:hint="@string/user"
+        android:layout_below="@+id/apptitle"
+        android:id="@+id/username"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/textbox"
+        android:inputType="text"
+        android:layout_width="match_parent"
+        android:layout_height="40dp" />
+    <EditText
+        android:padding="10dp"
+        android:hint="@string/password"
+        android:layout_below="@+id/username"
+        android:id="@+id/password"
+        android:background="@drawable/textbox"
+        android:layout_marginBottom="10dp"
+        android:inputType="textPassword"
+        android:layout_width="match_parent"
+        android:layout_height="40dp" />
+    <CheckBox
+        android:id="@+id/doctorlogin"
+        android:layout_below="@+id/password"
+        android:layout_marginBottom="10dp"
+        android:text="@string/doctor"
+        android:buttonTint="@color/colorAccent"
+        android:layout_centerInParent="true"
+        android:textColor="@color/primaryText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/login"
+        android:text="@string/login"
+        android:layout_below="@+id/doctorlogin"
+        android:layout_marginBottom="10dp"
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+    <TextView
+        android:text="@string/forgotpassword"
+        android:textColor="@color/primaryText"
+        android:layout_marginBottom="10dp"
+        android:gravity="center_horizontal"
+        android:id="@+id/forgetPassword"
+        android:layout_below="@+id/login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/register"
+        android:text="@string/register"
+        android:gravity="center_horizontal"
+        android:textColor="@color/primaryText"
+        android:layout_below="@+id/forgetPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

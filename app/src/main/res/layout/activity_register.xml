@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_register"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="20dp"
+    android:scrollbars="vertical"
+    android:background="@color/colorPrimaryDark"
+    tools:context="com.edu.tce.emr_sqlite.ui.Register">
+    <TextView
+        android:id="@+id/registerscreen"
+        android:text="@string/registerscreen"
+        android:textSize="25sp"
+        android:textColor="@color/primaryText"
+        android:gravity="center"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <ImageButton
+        android:layout_marginStart="120dp"
+        android:layout_below="@+id/registerscreen"
+        android:id="@+id/profile"
+        android:contentDescription="@string/profileimage"
+        android:layout_marginBottom="10dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:scaleType="fitCenter" />
+    <RadioGroup
+        android:layout_below="@+id/profile"
+        android:id="@+id/idendify"
+        android:orientation="horizontal"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:id="@+id/doctor"
+            android:text="@string/Doctor"
+            android:buttonTint="@color/colorAccent"
+            android:textColor="@color/primaryText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="chooseRegistrationMode"/>
+        <RadioButton
+            android:layout_marginStart="20dp"
+            android:id="@+id/patient"
+            android:text="@string/Patient"
+            android:textColor="@color/primaryText"
+            android:buttonTint="@color/colorAccent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="chooseRegistrationMode"/>
+    </RadioGroup>
+    <EditText
+        android:layout_below="@+id/idendify"
+        android:id="@+id/name"
+        android:hint="@string/name"
+        android:background="@drawable/textbox"
+        android:padding="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp" />
+    <EditText
+        android:background="@drawable/textbox"
+        android:padding="10dp"
+        android:hint="@string/password"
+        android:id="@+id/userpassword"
+        android:inputType="textPassword"
+        android:layout_below="@+id/name"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp" />
+    <EditText
+        android:background="@drawable/textbox"
+        android:padding="10dp"
+        android:id="@+id/age"
+        android:hint="@string/age"
+        android:layout_below="@+id/userpassword"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp" />
+    <EditText
+        android:background="@drawable/textbox"
+        android:padding="10dp"
+        android:id="@+id/address"
+        android:hint="@string/address"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@+id/age"
+        android:layout_width="match_parent"
+        android:layout_height="40dp" />
+    <EditText
+        android:padding="10dp"
+        android:id="@+id/mail"
+        android:hint="@string/email"
+        android:background="@drawable/textbox"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@+id/address"
+        android:layout_width="match_parent"
+        android:layout_height="40dp" />
+    <EditText
+        android:padding="10dp"
+        android:background="@drawable/textbox"
+        android:hint="@string/phn"
+        android:id="@+id/phnno"
+        android:layout_below="@+id/mail"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp" />
+    <EditText
+        android:padding="10dp"
+        android:background="@drawable/textbox"
+        android:hint="@string/specialization"
+        android:id="@+id/specialization"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@+id/phnno"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="40dp" />
+    <Button
+        android:text="@string/Register"
+        android:id="@+id/Register"
+        android:layout_below="@+id/specialization"
+        android:layout_alignParentEnd="true"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp" />
+</RelativeLayout>
+</ScrollView>

@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">EMR_SQLite</string>
+    <string name="user">UserName..</string>
+    <string name="password">Password..</string>
+    <string name="login">Login</string>
+    <string name="forgotpassword"><i><u>ForgotPassword??</u></i></string>
+    <string name="register"><i><u>Need an Account ? Register Here</u></i></string>
+    <string name="doctor">I am a Doctor</string>
+    <string name="registerscreen">Registration</string>
+    <string name="name">Name..</string>
+    <string name="age">Age..</string>
+    <string name="phn">Phone No..</string>
+    <string name="email">Email..</string>
+    <string name="address">Address..</string>
+    <string name="specialization">Specialization..</string>
+    <string name="Patient">Patient</string>
+    <string name="Doctor">Doctor</string>
+    <string name="profileimage">Profile-Image</string>
+    <string name="Register">Register</string>
+</resources>
