@@ -17,4 +17,6 @@
     <string name="Doctor">Doctor</string>
     <string name="profileimage">Profile-Image</string>
     <string name="Register">Register</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
